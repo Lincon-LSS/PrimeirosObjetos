@@ -1,0 +1,40 @@
+CRIACAO DO OBJETO
+package br.unipar.objetos;
+
+public class Pessoa {
+
+    public String nome;
+    public String sexo;
+    public Integer idade;
+    public String cpf;
+
+}
+
+USAR O OBJETO
+package br.unipar.main;
+
+import br.unipar.objetos.Pessoa;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        String versao = ""; //Um objeto e classe, sempre começa com letra maiuscula
+        Pessoa pessoa1 = new Pessoa();
+        pessoa1.nome = "Cleiton";
+        pessoa1.idade = 18;
+        pessoa1.sexo = "M";
+        pessoa1.cpf = "023.956.365-96";
+
+        Pessoa pessoa2 = new Pessoa();
+        pessoa2.nome = "Taffe";
+        pessoa2.idade = 126;
+        pessoa2.sexo = "M";
+        pessoa2.cpf = "1";
+
+        System.out.println(pessoa1.nome);
+        System.out.println(pessoa2.nome);
+    }
+
+}
+
